@@ -36,7 +36,7 @@ class ReceivingMessage {
  * WebRTC peer-to-peer session
  *
  */
-module.exports = class WebRTCAdaptor {
+export class WebRTCAdaptor {
 	constructor(initialValues) {
 		/**
 		 * Used while initializing the PeerConnection
@@ -1734,7 +1734,7 @@ module.exports = class WebRTCAdaptor {
 	applyConstraints(streamId, newConstaints) {
 		return this.mediaManager.applyConstraints(streamId, newConstaints);
 	}
-};
+}
 
 /* The Information Callbacks Called by This Class */
 //TODO:
