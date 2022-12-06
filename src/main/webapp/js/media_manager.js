@@ -1045,7 +1045,7 @@ export class MediaManager {
 				video: false,
 				audio: { deviceId: deviceId },
 			};
-			this.setAudioInputSource(
+			return this.setAudioInputSource(
 				streamId,
 				tempMediaConstraints,
 				null,
@@ -1053,7 +1053,7 @@ export class MediaManager {
 				deviceId
 			);
 		} else {
-			this.setAudioInputSource(
+			return this.setAudioInputSource(
 				streamId,
 				this.mediaConstraints,
 				null,

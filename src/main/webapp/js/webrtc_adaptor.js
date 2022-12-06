@@ -1695,7 +1695,7 @@ module.exports = class WebRTCAdaptor {
 		return this.mediaManager.switchDesktopCaptureWithCamera(streamId);
 	}
 	switchAudioInputSource(streamId, deviceId) {
-		this.mediaManager.switchAudioInputSource(streamId, deviceId);
+		return this.mediaManager.switchAudioInputSource(streamId, deviceId);
 	}
 	setVolumeLevel(volumeLevel) {
 		this.mediaManager.setVolumeLevel(volumeLevel);
@@ -1732,7 +1732,7 @@ module.exports = class WebRTCAdaptor {
 	}
 
 	applyConstraints(streamId, newConstaints) {
-		this.mediaManager.applyConstraints(streamId, newConstaints);
+		return this.mediaManager.applyConstraints(streamId, newConstaints);
 	}
 };
 
